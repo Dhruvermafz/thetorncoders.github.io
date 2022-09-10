@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <nav class="navigation max-width-1 m-auto">
+   <div>
+      <ul>
+         <li><a href ='index.html'>Home</a></li>
+         <li> <a href ='https://www.simplilearn.com/skillup-free-online-courses?utm_campaign=GameInCPPTicTacToe&utm_
+            medium=Description&utm_source=youtube#Software-Development'>Free Courses</a></li>
+         <li> <a href ='placement.html'>Companies For Placement</a></li>
+         
+      </ul>
+   </div>
+   </nav>
+<div class="container">
+   
+   <div class="image">
+      <video autoplay loop muted  width="1190px" height="450px">
+         <source src="images/THE TORN CODERS v.mp4">
+      </video>
+   </div>
+   <div class="description">
+   <p class="desc">
+      This Project enables students with basic counseling through a basic test like format that provides them the necessary required firm knowledge by ensuring them with presumed formal examination and tell them about their score in a somewhat either numeric or variable grading system.This test contains the pre repeated questions of the previously asked interviews and exams at various companies and MNCs.
+      </p>
+      
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <div class="image">
+            <img src="images/c++.png" alt="">
+         </div>
+         <div class="content">
+            <h3>C++ Test Here</h3>
+            <p>The Talented Coder </p>
+            <a href="" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/java.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Java Test Here</h3>
+            <p>The Talented Coder </p>
+            <a href="quiz_java.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>Total Time:-2.5 Minutes  </span>
+               <span> <i class="fas fa-user"></i>10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/web.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Web Devlopment Test Here</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_web.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions  </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/python.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Python Test Here</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_py.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>Total Time:-2.5 Minutes  </span>
+               <span> <i class="fas fa-user"></i>  10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/aptitude.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Aptitude Test goes here</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_apti.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/c.png" alt="">
+         </div>
+         <div class="content">
+            <h3>C Language Test goes here</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_c.html" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes</span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div id="load-more"> load more </div>
+
+</div>
+
+<script>
+
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () =>{
+   let boxes = [...document.querySelectorAll('.container .box-container .box')];
+   for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 3;
+
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
+
+</script>
+
+</body>
+</html>
