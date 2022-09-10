@@ -1,5 +1,9 @@
 # thetorncoders.github.io
 
+This Project enables students with basic counseling through a basic test like format that provides them the necessary required firm knowledge by ensuring them with presumed formal examination and tell them about their score in a somewhat either numeric or variable grading system.This test contains the pre repeated questions of the previously asked interviews and exams at various companies and MNCs. This Project challenges the corporate aspirants with from basic to advanced level 
+Placement questions making it easier for them to understand their performance and learn accordingly. It mainly target Learners from the core,Corporate Aspirants, Job Seekers.
+
+
 C++ is a cross-platform language that can be used to create high-performance applications.
 C++ was developed by Bjarne Stroustrup, as an extension to the C language.
 C++ gives programmers a high level of control over system resources and memory.C++ is one of the world's most popular programming languages.
