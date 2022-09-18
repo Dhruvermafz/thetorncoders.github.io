@@ -1,112 +1,113 @@
 let questions = [
     {
     numb: 1,
-    question: "1. C++ uses which approach?",
-    answer: "bottom -up",
+    question: "What is the correct syntax of web address?",
+    answer: "scheme://prefix.domain:port/path/filename",
     options: [
-      "right -left",
-      "Top-down",
-      "left-right",
-      "bottom -up"
+      "port://domain.filenmae:path/scheme/prefix",
+      "prefix://scheme.port:domain/filename/path",
+      "path://prefix.port:domain/filename/scheme",
+      "scheme://prefix.domain:port/path/filename"
     ]
   },
     {
     numb: 2,
-    question: "2.By which of the following can the if-else statement be replaced?",
-    answer: "Conditional operator",
+    question: "Which of the following is not a difference between HTML and XHTML?",
+    answer: "Special characters must be escaped using character entities in XHTML unlike HTML",
     options: [
-      "Bitwise operator",
-      "Logical operator",
-      "Conditional operator",
-      "Arithmetic operator"
+      "Charset in both html and xhtml is “text/html”",
+      "Tags and attributes are case-insensitive in HTML but not in XHTML",
+      "Special characters must be escaped using character entities in XHTML unlike HTML",
+      "Charset in html is “text/html” where as in xhtml it is “application/xml+xhtml”"
     ]
   },
     {
     numb: 3,
-    question: " 3. When can an inline function be expanded ?",
-    answer: "Compile time",
+    question: "Which element is used for or styling HTML5 layout?",
+    answer: "CSS",
     options: [
-      "Runtime",
-      "Compile time",
-      "Never gets expanded",
-      "All of the above"
+      "CSS",
+      "jQuery",
+      "JavaScript",
+      "PHP"
+     
     ]
   },
     {
       numb: 4,
-    question: "4.Using which of the following keywords can an exception be generated??",
-    answer: "throw",
+    question: "What will be the output of the following JavaScript code? // JavaScript Comparison Operators   function compare()  {  int num=2;  char b=2;  if(a==b)      return true; else   return false;  }",
+    answer: "true",
     options: [
-      "threw",
-      "throws",
-      "throw",
-      "catch",
+      "false",
+      "true",
+      "compilation error",
+      "runtime error"
     ]
   },
     {
       numb: 5,
-      question: "5.Identify the correct range of signed char.?",
-      answer: "-128 to 127",
+      question: "Which of the following explains correctly what happens when a JavaScript program is developed on a Unix Machine?",
+      answer: "will work perfectly well on a Windows Machine",
       options: [
-        "-256 to 255",
-        "-128 to 127",
-        "0 to 255",
-        "0 to 127"
+        "will work perfectly well on a Windows Machine",
+        "will be displayed as JavaScript text on the browser",
+        "will throw errors and exceptions",
+        "must be restricted to a Unix Machine only"
     ]
   },
   {
     numb: 6,
-    question: "6. How much bytes of memory does void occupy??",
-    answer: "0",
+    question: "What will be the result or type of error if p is not defined in the following JavaScript code snippet?     console.log(p)",
+    answer: "Reference Error",
     options: [
-      "1",
-      "0",
-      "2",
-      "4",
+      "Value not found Error",
+      "Reference Error",
+      "Null",
+      "Zero",
   ]
 },
 {
   numb: 7,
-  question: "7. Choose the option below which is not a member of class?",
-  answer: "Friend function",
+  question: "Which of the following is the property that is triggered in response to JS errors?",
+  answer: "onerror",
   options: [
-    "Friend function",
-    "Static function",
-    "Virtual function",
-    "Const function",
+    "onclick",
+    "onerror",
+    "onmessage",
+    "onexception",
 ]
 },
 {
   numb: 8,
-  question: "8. Under which pillar of OOPS does base class and derived class relationship come?",
-  answer: "Inheritance",
+  question: "In jQuery all the elements are selected by writing ____",
+  answer: "$(“*”)",
   options: [
-    "Polymorphism",
-    "Inheritance",
-    "Encapsulation",
-    "Abstraction"
+    "$(this)",
+    "$(“:button”)",
+    "$(“*”)",
+    "$(“.class_name”)"
 ]
 },
 {
   numb: 9,
-  question: "9. Which of the following functions can be inherited from base class  ?",
-  answer: "None",
+  question: "hover() method is the combination of ____",
+  answer: "mouseleave() and mouseenter()",
   options: [
-    "Constructor",
-    "Destructor",
-    "Static",
-    "None"
+    "mouseleave() and mouseenter()",
+    "mousedown() and mouseenter()",
+    "mouseup() and mousedown()",
+    "mouseleave() and mousedown()"
 ]
 },
 {
   numb: 10,
-  question: "10. Which of the following is the correct identifier ?",
-  answer: "var_name12",
+  question: "Which method is not for traversing DOM tree sideways?",
+  answer: "parent()",
   options: [ 
-    "2var_name",
-    "2VAR_NAME",
-    "$varname",
-    "var_name12"
+    "parent()",
+    "siblings()",
+    "prev()",
+    "nextAll()"
 ]
 },
 
