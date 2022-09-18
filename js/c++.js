@@ -1,7 +1,7 @@
 let questions = [
     {
     numb: 1,
-    question: "1. Which of the following user-defined header file extension used in c++??",
+    question: "Which of the following user-defined header file extension used in c++??",
     answer: "h",
     options: [
       "hg",
@@ -12,8 +12,8 @@ let questions = [
   },
     {
     numb: 2,
-    question: "2. Which of the following is a correct identifier in C++?",
-    answer: "VAR_123",
+    question: "Which of the following is a correct identifier in C++?",
+    answer: "VAR_1234",
     options: [
       "VAR_1234",
       "$var_name",
@@ -23,7 +23,7 @@ let questions = [
   },
     {
     numb: 3,
-    question: " 3. Which of the following type is provided by C++ but not C?",
+    question: "Which of the following type is provided by C++ but not C?",
     answer: "bool",
     options: [
       "double",
@@ -34,7 +34,7 @@ let questions = [
   },
     {
       numb: 4,
-    question: "4.What is the size of wchar_t in C++?",
+    question: "What is the size of wchar_t in C++?",
     answer: "Based on the number of bits in the system",
     options: [
       "Based on the number of bits in the system",
@@ -45,29 +45,29 @@ let questions = [
   },
     {
       numb: 5,
-      question: "5.Which is more effective while calling the C++ functions? ",
+      question: "Which is more effective while calling the C++ functions? ",
       answer: "call by reference",
       options: [
         "call by object",
         "call by pointer",
         "call by value",
-        "call by refrence"
+        "call by reference"
     ]
   },
   {
     numb: 6,
-    question: "6. Which keyword is used to define the macros in c++? ",
+    question: "Which keyword is used to define the macros in c++? ",
     answer: "#define",
     options: [
       " #macro",
       "#define",
-      "macro",
-      "define",
+      "#macro",
+      "#define",
   ]
   },
   {
   numb: 7,
-  question: "7. What is Inheritance in C++?",
+  question: "What is Inheritance in C++?",
   answer: " Deriving new classes from existing classes",
   options: [
     " Deriving new classes from existing classes",
@@ -78,7 +78,7 @@ let questions = [
   },
   {
   numb: 8,
-  question: "8.What is meant by a polymorphism in C++?",
+  question: "What is meant by a polymorphism in C++?",
   answer: " class having many forms",
   options: [
     "class having only single form",
@@ -89,7 +89,7 @@ let questions = [
   },
   {
   numb: 9,
-  question: "9. Which of the following constructors are provided by the C++ compiler if not defined in a class? ",
+  question: "Which of the following constructors are provided by the C++ compiler if not defined in a class? ",
   answer: "All of the mentioned",
   options: [
     "Copy constructor",
@@ -100,7 +100,7 @@ let questions = [
   },
   {
   numb: 10,
-  question: "10.What is the benefit of c++ input and output over c input and output?  ",
+  question: "What is the benefit of c++ input and output over c input and output?  ",
   answer: "Type safety",
   options: [ 
     "Both Type safety & Exception",
