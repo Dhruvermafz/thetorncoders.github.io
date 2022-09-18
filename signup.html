@@ -4,59 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Tron Coders</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
 </head>
     <body background="images/login.jpg" class="bg-success">
         <div class="container">
-            <h1 class="form__title">THE TORN CODERS</h1>
-            <h1 class="form__title">SIGNUP PANEL</h1>
+            <h1 class="form__title">THE TRON CODERS</h1>
+            <h1 class="form__title">SIGNUP</h1>
     
-            <div class="col-md-8 col-md-offset-2">
+            <form id="regForm" class="col-md-8 col-md-offset-2">
+                <br/>
+                <input type="text" class="form__input" id="name" placeholder="Enter your name..." required>
                 <br />
-                Enter Name:
-                <input type="text" class="form__input" name="" id="name"><br />
+                <input type="text" class="form__input" id="age" placeholder="Enter your Age...." required>
                 <br />
-                Enter Age:
-                <input type="text" class="form__input" name="" id="age"><br />
-                <br />
-                Enter Address:
-                <input type="text" class="form__input"  name="" id="address"><br />
-                Enter Email:
-                <input type="text" class="form__input" name="" id="email"><br />
-                Enter Password:
-                <input type="text" class="form__input" name="" id="pass"><br />
+                <input type="text" class="form__input" id="address" placeholder="Enter your Address..." required>
+                <br/>
+                <input type="text" class="form__input" id="email" placeholder="Enter your Email Id..." required>
+                <br/>
+                <input type="text" class="form__input" id="pass" placeholder="Enter your Password" required>
                 <br />
                 
-                <button class="form__button" onclick="signup()" type="submit" ><a href="index.html" style="text-decoration: none;"> Continue</a></button>
+                <button type="submit" class="form__button" > 
+                     Submit  
+                </button>
             <p class="form__text">
-                <a class="form__link" href="./index.html" id="linkLogin">Already have an account? Sign in</a>
+                <a class="form__link" href="./index.html" id="linkLogin">
+                    Already have an account? Sign in</a>
             </p>
-            </div>
+            </form>
         </div>
-   <script>
-      function signup() {
-
-var name = document.getElementById("name").value;
-var age = document.getElementById("age").value;
-var address = document.getElementById("address").value;
-var email = document.getElementById("email").value;
-var pass = document.getElementById("pass").value;
-
-localStorage.setItem("name1", name)
-localStorage.setItem("age1", age)
-localStorage.setItem("address1", address)
-localStorage.setItem("email1", email)
-localStorage.setItem("pass1", pass)
-
-document.getElementById("name").value="";
-document.getElementById("age").value="";
-document.getElementById("address").value="";
-document.getElementById("email").value="";
-document.getElementById("pass").value="";
-alert("user registered successfully...!!!");
-}
-   </script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="js/register.js"></script>
 </body>
 </html>
