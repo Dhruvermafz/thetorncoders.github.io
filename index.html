@@ -1,35 +1,162 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>The Tron Coders</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">   
-</head>
-<body style="background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)">
-    <div class="container">
-        <form class="form" id="loginForm">
-            <h1 class="form__title">Login</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input id="email" type="text" class="form__input" autofocus placeholder="Email">
-                <div class="form__input-error-message"></div>
-            </div>
-            <div class="form__input-group">
-                <input id="pass" type="pass" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
-            </div>
+   <meta charset="UTF-8">
+   <title>The Tron Coders</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-            <button type="submit" class="form__button" > <a href="main.html" style="text-decoration: none">
-                Login</a>
-           </button>
-            <p class="form__text">
-                <a class="form__link" href="./signup.html" id="linkCreateAccount">Don't have an account? Create account</a>
-            </p>
-        </form>
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="navbar">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">The Tron Coders</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Free Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Companies</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-        <script src="js/login.js"></script>
+<div class="container">
+   
+   <div class="image">
+      <video autoplay loop muted  width="1190px" height="450px">
+         <source src="images/the tron coders.mp4">
+      </video>
+   </div>
+   <div class="description">
+   <p class="desc">
+      This Project enables students with basic counseling through a basic test like format that provides them the necessary required firm knowledge by ensuring them with presumed formal examination and tell them about their score in a somewhat either numeric or variable grading system.This test contains the pre repeated questions of the previously asked interviews and exams at various companies and MNCs.
+      </p>
+      
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <div class="image">
+            <img src="images/c++.png" alt="cpp">
+         </div>
+         <div class="content">
+            <h3>C++ Test</h3>
+            <p>The Talented Coder </p>
+            <a href="quiz_cpp.html" class="btn">Go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/java.png" alt="java">
+         </div>
+         <div class="content">
+            <h3>Java Test</h3>
+            <p>The Talented Coder </p>
+            <a href="quiz_java.html" class="btn">go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>Total Time:-2.5 Minutes  </span>
+               <span> <i class="fas fa-user"></i>10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/web.jpg" alt="web">
+         </div>
+         <div class="content">
+            <h3>Web Devlopment Test</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_web.html" class="btn">go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions  </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/python.jpg" alt="python">
+         </div>
+         <div class="content">
+            <h3>Python Test</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_py.html" class="btn">go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>Total Time:-2.5 Minutes  </span>
+               <span> <i class="fas fa-user"></i>  10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/aptitude.jpg" alt="aptitude">
+         </div>
+         <div class="content">
+            <h3>Aptitude Test</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_apti.html" class="btn">go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes </span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/c.png" alt="C">
+         </div>
+         <div class="content">
+            <h3>C Language Test</h3>
+            <p>The Talented Coder</p>
+            <a href="quiz_c.html" class="btn">go for it</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> Total Time:-2.5 Minutes</span>
+               <span> <i class="fas fa-user"></i> 10 Questions </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div id="load-more"> load more </div>
+
+</div>
+
+<script src="js/index.js"></script>
+
 </body>
 </html>
