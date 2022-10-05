@@ -1,4 +1,4 @@
-const firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyANa2BuSy9Jg5jyRTNtgh-Ye3WXYGEAcr8",
     authDomain: "thetorncoders.firebaseapp.com",
     databaseURL: "https://thetorncoders-default-rtdb.firebaseio.com",
@@ -13,40 +13,66 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 // ===== Firebase configuration (end) ==== //
 
-var regFormDB = firebase.database().ref("regForm");
+// var regFormDB = firebase.database().ref("regForm");
 
-document.getElementById("regForm").addEventListener("submit", submitForm);
+// document.getElementById("regForm").addEventListener("submit", submitForm);
 
-function submitForm(e) {
-  e.preventDefault();
+// function submitForm(e) {
+//   e.preventDefault();
 
-  var name = getElementVal("name");
-  var email = getElementVal("email");
-  var address = getElementVal("address");
-  var age = getElementVal("age");
-  var pass = getElementVal("pass");
+//   var name = getElementVal("name");
+//   var email = getElementVal("email");
+//   var address = getElementVal("address");
+//   var age = getElementVal("age");
+//   var pass = getElementVal("pass");
 
-  saveMessages(name, email, age, address, pass);
+//   saveMessages(name, email, age, address, pass);
 
  
 
-  //   reset the form
-  document.getElementById("regForm").reset();
+//   //   reset the form
+//   document.getElementById("regForm").reset();
+// }
+
+// const saveMessages = (name, email, age, address, pass) => {
+//   var newregForm = regFormDB.push();
+
+//   newregForm.set({
+//     name: name,
+//     email: email,
+//     age: age,
+//     address: address,
+//     pass: pass
+//   });
+// };
+
+// const getElementVal = (id) => {
+//   return document.getElementById(id).value;
+// };
+
+function save()
+{
+   name= document.getElementById("txtName").value;
+   email= document.getElementById("txtEmail").value;
+   password= document.getElementById("txtPassword").value;
+
+   firebase.database().ref('/Record/'+email).set(
+                            {
+                            
+                            Name:name, 
+                            Email:email,
+                            Password:password
+                             
+                            
+                            }
+                        ) ;
+                        clear();
+                        alert("Save successfully")
 }
 
-const saveMessages = (name, email, age, address, pass) => {
-  var newregForm = regFormDB.push();
-
-  newregForm.set({
-    name: name,
-    email: email,
-    age: age,
-    address: address,
-    pass: pass
-  });
-};
-
-const getElementVal = (id) => {
-  return document.getElementById(id).value;
-};
-
+function clear()
+{
+    document.getElementById("txtName").value="";
+    document.getElementById("txtEmail").value="";
+    document.getElementById("txtPassword").value="";
+}

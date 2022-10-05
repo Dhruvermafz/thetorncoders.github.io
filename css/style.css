@@ -1,68 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
-
-*{
-   font-family: 'Montserrat', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
-   text-transform: capitalize;
-   transition: all .2s linear;
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/* -----------------------------------
+    1 - General Styles
+------------------------------------*/
+*, body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body{
- background-color: #dc143c22; 
-}
-
-nav {
-  background: var(--clr-white);
-  list-style: none;
-  font-family: var(--font2);
-  transition: all 0.3s ease-in-out;
-  display: grid;
-  align-items: center;
-  box-shadow: var(--dark-shadow);
- 
-  font-weight: bolder;;
-}
-
-nav li{
-  font-size:20px;
-}
-
-nav a:hover {
-  color: var(--clr-primary-5);
-}
-
-.max-width-1 {
-  max-width: 120vw;
-}
-
-
-.m-auto {
-  margin: auto;
- 
-}
-a{
-  display: block;
-  padding: 0 40px;
-  color: aliceblue;
-  text-decoration: none;
-}
-
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: 30px;
-  background-color: rgb(143, 70, 94);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-}
-
-li{
-  float:left;
-  border-right: 1px saddlebrown;
+html, body {
+    height: 100%;
+    background: #007bff;
 }
 .description{
   border-width:2px;
@@ -214,4 +164,22 @@ li{
     font-size: 12px;
   }
 
+}
+
+
+/* Page content */
+/* .container {
+  padding: 16px;
+} */
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+  padding-top: 60px;
 }
